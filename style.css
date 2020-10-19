@@ -5,22 +5,26 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .beatbox {
-  width: 600px;
-  height: 600px;
-  background: #333;
+  max-width: 600px; /*600px;*/
+  width: fit-content;
+  max-height: 600px;
+  height: 60vh;
+  min-height: 500px;
+  background: rgb(47, 52, 53);
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-evenly;
+  align-content: space-around;
 }
 
 .beat {
@@ -30,12 +34,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2pdx solid yellow;
 }
 
 .beat .button {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
+  max-width: 120px;
+  width: 25vw;
+  max-height: 120px;
+  height: 35vh;
+  border-radius: 10%;
   border: 5px solid aqua;
   color: white;
   display: flex;
@@ -43,5 +50,5 @@ body {
   align-items: center;
   font-family: sans-serif;
   font-size: 2em;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
