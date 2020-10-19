@@ -120,7 +120,7 @@ case "L":
   
   break;
   
-  default:
+  default: id ="";
  break;
   }
 }
